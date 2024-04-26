@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%String msg=(String)request.getAttribute("msg"); 
+if(msg!=null){
+%>
+<h2><%=msg %></h2>
+<%} %>
+<form action="forgot">
+Enter No: <input type="text" name="phone" required>
+<button>Submit</button>
+</form>
+</body>
+</html>
